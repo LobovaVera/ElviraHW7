@@ -61,10 +61,10 @@ void EachRowArithmeticMean(int[,] array)
         for(int j =0; j<array.GetLength(1); j++)
         {
             
-            arithmeticMean += Convert.ToDouble(array[i,j]);
+            arithmeticMean += Convert.ToDouble(array[j,i]);
 
         }
-        Console.WriteLine($"Среднее арифметическое строки номер {i+1} = {arithmeticMean/(array.GetLength(1))} ");
+        Console.WriteLine($"Среднее арифметическое столбца номер {i+1} = {arithmeticMean/(array.GetLength(1))} ");
     }
 }
 Main();
